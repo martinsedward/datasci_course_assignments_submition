@@ -1,12 +1,14 @@
 import oauth2 as oauth
 import urllib2 as urllib
 
-# See Assginment 6 instructions or README for how to get these credentials
-access_token_key = "<Enter your access token key here>"
-access_token_secret = "<Enter your access token secret here>"
+#in terminal call: easy_install oauth2
 
-consumer_key = "<Enter consumer key>"
-consumer_secret = "<Enter consumer secret>"
+# See Assginment 6 instructions or README for how to get these credentials
+access_token_key = "1409176350-NIKJTpyrW2x8qs8KtPsGM9ILYljoX484vZrbRVT"
+access_token_secret = "S7iqM3geZGwBBr8Uz8exwJ0mp8A7LXxoCMcSf9maDU"
+
+consumer_key = "9dQ9br0VP0NjAABECA67A"
+consumer_secret = "emas62kYl2Q25yictqRiYuJefapqAMcR9WnobfJffs"
 
 _debug = 0
 
