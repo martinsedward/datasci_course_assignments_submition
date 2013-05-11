@@ -1,7 +1,7 @@
-import simplejson
-#import json
-#import urllib
-import urllib2
+#import simplejson
+import json
+import urllib
+#import urllib2
 import sys
 import re
 
@@ -24,7 +24,7 @@ pattern_split = re.compile(r"\W+")
 
 score = 0
 for jsonstring in tweet_file:#Line
-    for word in pattern_split.split(simplejson.loads(jsonstring)["text"].lower()):#Words of line
+    for word in pattern_split.split(json.loads(jsonstring)["text"].lower()):#Words of line
     #    sentiment_file.write("[" + word +" = " + str(scores.get(word, 0)) + "]")
     #sentiment_file.write("\n")    
         score = score + scores.get(word, 0)
