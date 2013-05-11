@@ -15,7 +15,7 @@ for line in afinnfile:
 
   
 #Open fw the sentiment file to output
-sentiment_file = open('sentiment_file_derived.txt','w')
+#sentiment_file = open('sentiment_file_derived.txt','w')
 
 #Open fr the livestream data
 tweet_file = open(sys.argv[2])
@@ -29,7 +29,8 @@ for jsonstring in tweet_file:#Line
     #    sentiment_file.write("[" + word +" = " + str(scores.get(word, 0)) + "]")
         score = score + scores.get(word, 0)
     #sentiment_file.write(" => "+str(score) + "\n") 
-    sentiment_file.write(str(score) + "\n") 
+    #sentiment_file.write(str(score) + "\n") 
+    print str(score)
     score = 0
         
 
@@ -45,7 +46,7 @@ for jsonstring in tweet_file:#Line
 
 
 tweet_file.close()
-sentiment_file.close()
+#sentiment_file.close()
 afinnfile.close()
 
   
