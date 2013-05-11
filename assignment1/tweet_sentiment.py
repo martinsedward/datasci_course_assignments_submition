@@ -6,7 +6,8 @@ import sys
 import re
 
 #Open sentiment file score and transform in dict 
-afinnfile = open("AFINN-111.txt")
+#afinnfile = open("AFINN-111.txt")
+afinnfile = open(sys.argv[1])
 scores = {} # initialize an empty dictionary
 for line in afinnfile:
   term, score  = line.split("\t")  # The file is tab-delimited. "\t" means "tab character"
@@ -14,7 +15,7 @@ for line in afinnfile:
 
   
 #Open fw the sentiment file to output
-sentiment_file = open(sys.argv[1],'w')
+sentiment_file = open('sentiment_file_derived.txt','w')
 
 #Open fr the livestream data
 tweet_file = open(sys.argv[2])
@@ -26,8 +27,8 @@ score = 0
 for jsonstring in tweet_file:#Line
     for word in pattern_split.split(json.loads(jsonstring)["text"].lower()):#Words of line
     #    sentiment_file.write("[" + word +" = " + str(scores.get(word, 0)) + "]")
-    #sentiment_file.write("\n")    
         score = score + scores.get(word, 0)
+    #sentiment_file.write(" => "+str(score) + "\n") 
     sentiment_file.write(str(score) + "\n") 
     score = 0
         
