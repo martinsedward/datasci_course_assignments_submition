@@ -46,6 +46,7 @@ for jsonstring in tweet_file:#Line
 
 tweet_file.close()
 sentiment_file.close()
+afinnfile.close()
 
   
 #print scores.items() # Print every (term, score) pair in the dictionary
