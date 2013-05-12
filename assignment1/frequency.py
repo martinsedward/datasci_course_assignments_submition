@@ -28,12 +28,14 @@ try:
     
     #count the words to determine the frenquency
     word_count = 0
+    word_sum = 0
     word_count_list = {}
     for key, word in dict_word.iteritems():
         for key, tweet_list in tweet.iteritems():
             if re.search(r"\s" + str(word) + "\s",  tweet_list):
                 word_count = word_count + 1
         word_count_list[word] = word_count
+        word_sum = word_sum + word_count
         word_count = 0
     
     
@@ -43,6 +45,6 @@ try:
     #for key, value in dict_word.iteritems():
     #    print value    
     for key, value in word_count_list.iteritems():
-        print key, value    
+        print key, "%.4f" %(float(value)/float(word_sum))
 except: 
     pass
