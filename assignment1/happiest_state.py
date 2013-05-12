@@ -329,7 +329,7 @@ for jsonstring in tweet_file:#Line
                         word_aux = word_aux + str(word) + " "
                         state_aux = json.loads(jsonstring)['place']['country_code'] + " - " + json.loads(jsonstring)['place']['name'] + " - " + value #  + " - " + json.loads(jsonstring)['user']['location']
                     
-                    print str(score),state_aux, " - [" + word_aux + "]"
+                    #print str(score),state_aux, " - [" + word_aux + "]"
                     #Calculate whats the more happy state
                     for key_uf, value_uf in UF.iteritems():
                         score_uf, uf  = value_uf.split("\t")
@@ -355,8 +355,8 @@ for key, value in sorted(UF.iteritems(), key=lambda (k,v): (v,k)):
     if int(score) > score_aux:
         score_aux = int(score)
         Happy_UF = uf
-    print "%s: %s" % (score, uf)
+    #print "%s: %s" % (score, uf)
     
-print "Happiest UF is "+Happy_UF + " with " + str(score_aux)
-
+#print "Happiest UF is "+Happy_UF + " with " + str(score_aux)
+print Happy_UF
 
