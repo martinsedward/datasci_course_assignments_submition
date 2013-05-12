@@ -35,7 +35,7 @@ try:
             #increment sum of socore    
             score = score + score_aux
             #increment scored tweet line contain words and tweet sentiment
-            scored_tweet_aux = scored_tweet_aux + word + " "#the words are separet for spaces
+            scored_tweet_aux = scored_tweet_aux + " " +  word + " "#the words are separet for spaces
             #if word isnt contained in AFINN-111 the score is 0
             if score_aux == 0:
                 #populate a zero-word list
@@ -50,8 +50,8 @@ try:
         index = index + 1
         
     #check
-    #for key, value in scored_tweet_list.iteritems() :
-    #    print key, value
+    for key, value in scored_tweet_list.iteritems() :
+        print key, value
     #print zero_word_list
     
     #Close all opened files
