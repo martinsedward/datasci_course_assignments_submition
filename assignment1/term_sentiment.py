@@ -50,8 +50,8 @@ try:
         index = index + 1
         
     #check
-    for key, value in scored_tweet_list.iteritems() :
-        print key, value
+    #for key, value in scored_tweet_list.iteritems() :
+    #    print key, value
     #print zero_word_list
     
     #Close all opened files
