@@ -27,7 +27,7 @@ hashtags_text = {}
 for key, value in hashtags_text_list.iteritems():
     score = 0.0
     for key_aux, value_aux in hashtags_text_list.iteritems():
-        if str(value) == str(value_aux):
+        if value == value_aux:
             score = score + 1
     hashtags_text[value] = score -1
 
