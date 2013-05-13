@@ -31,7 +31,7 @@ for key, value in hashtags_text_list.iteritems():
             score = score + 1
     hashtags_text[value] = score -1
     
-for key, value in sorted(hashtags_text.iteritems(), key=lambda (k,v): (v,k)):    
-    print value
+for key, value in sorted(hashtags_text.iteritems(), key=lambda (k,v): (v,k), reverse=True):    
+    print key, value
     
     
