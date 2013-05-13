@@ -33,8 +33,8 @@ for key, value in hashtags_text_list.iteritems():
 
 count = 0
 for key, value in sorted(hashtags_text.iteritems(), key=lambda (k,v): (v,k), reverse=True): 
-    if count < 10:
-        print key, value
-        count = count + 1
-    else:
+    print key, value
+    count = count + 1
+    if count >= 10:
         break
+    
