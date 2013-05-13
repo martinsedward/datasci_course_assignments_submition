@@ -40,6 +40,8 @@ for jsonstring in tweet_file:#Line
             
             try:
                 citie, value = json.loads(jsonstring)['user']['location'].split(",")
+                if value == "":
+                    citie, value = json.loads(jsonstring)['place']['full_name'].split(",")
             
                 #print json.loads(jsonstring)['user']['location'].split(",")
                 #UF[value] = str(score) + "\t" +value
