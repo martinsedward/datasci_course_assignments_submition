@@ -40,13 +40,6 @@ for jsonstring in tweet_file:#Line
             
             try:
                 citie, value = json.loads(jsonstring)['user']['location'].split(",")
-            except: 
-                try:
-                    citie, value = json.loads(jsonstring)['place']['full_name'].split(",")
-                except:
-                    citie, value = ""
-                    pass
-                pass 
             
                 #print json.loads(jsonstring)['user']['location'].split(",")
                 #UF[value] = str(score) + "\t" +value
@@ -61,7 +54,8 @@ for jsonstring in tweet_file:#Line
                     
                 UF[value] = str(score) + "\t" +value
                 #index = index + 1
-   
+            except: 
+                pass
                 score = 0
                 state_aux = ""
                 word_aux = ""
