@@ -30,8 +30,10 @@ for key, value in hashtags_text_list.iteritems():
         if str(value) == str(value_aux):
             score = score + 1
     hashtags_text[value] = score -1
-    
-for key, value in sorted(hashtags_text.iteritems(), key=lambda (k,v): (v,k), reverse=True):    
-    print key, value
-    
+
+count = 0
+for key, value in sorted(hashtags_text.iteritems(), key=lambda (k,v): (v,k), reverse=True): 
+    if count < 10:
+        print key, value
+        count = count + 1
     
