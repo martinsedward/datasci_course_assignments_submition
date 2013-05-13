@@ -36,13 +36,13 @@ try:
                 #    if str(json.loads(jsonstring)['place']['name']) in key:#check if the citie in place.name are a valid citie of US state
                 for word in pattern_split.split(json.loads(jsonstring)["text"].lower()):#Words of line
                     score = score + scores.get(word, 0)
-                    word_aux = word_aux + str(word) + " "
+                    #word_aux = word_aux + str(word) + " "
                 
                 citie, value = json.loads(jsonstring)['place']['full_name'].split(",")
-                UF[value] = str(score) + "\t" +value
-                state_aux = json.loads(jsonstring)['place']['country_code'] + " - " + citie + " - " + value #  + " - " + json.loads(jsonstring)['user']['location']
+                #UF[value] = str(score) + "\t" +value
+                #state_aux = json.loads(jsonstring)['place']['country_code'] + " - " + citie + " - " + value #  + " - " + json.loads(jsonstring)['user']['location']
                 
-                print str(score),state_aux, " - [" + word_aux + "]"
+                #print str(score),state_aux, " - [" + word_aux + "]"
                 #Calculate whats the more happy state
                 for key_uf, value_uf in UF.iteritems():
                     score_uf, uf  = value_uf.split("\t")
@@ -68,9 +68,9 @@ try:
         if int(score) > score_aux:
             score_aux = int(score)
             Happy_UF = uf
-        print "%s: %s" % (score, uf)
+        #print "%s: %s" % (score, uf)
         
-    print "Happiest UF is "+Happy_UF + " with " + str(score_aux)
-    #print Happy_UF
+    #print "Happiest UF is "+Happy_UF + " with " + str(score_aux)
+    print Happy_UF
 except: 
     pass    
