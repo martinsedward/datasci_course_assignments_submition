@@ -11,13 +11,17 @@ for line in tweet_file:#Line
 #try: 
     tweets.append(json.loads(line))
 #except:
-#    pass
-
-#tweet = tweets[0]
-#print tweet
 
 ids = []
+hashtags_text_list = {}
+index = 0
+
 for tweet in tweets:
   if tweet['entities']['hashtags']:
-    print tweet['entities']['hashtags'][0]['text']
-    break
+      for hashtags in tweet['entities']['hashtags']:
+        hashtags_text_list[index] = hashtags['text']
+        index = index + 1
+        break
+
+for key, value in hashtags_text_list.iteritems():
+    print value
