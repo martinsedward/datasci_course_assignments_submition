@@ -38,7 +38,7 @@ try:
                     score = score + scores.get(word, 0)
                     word_aux = word_aux + str(word) + " "
                     citie, value = json.loads(jsonstring)['place']['full_name'].split(",")
-                    state_aux = json.loads(jsonstring)['place']['country_code'] + " - " + json.loads(jsonstring)['place']['name'] + " - " + value #  + " - " + json.loads(jsonstring)['user']['location']
+                    state_aux = json.loads(jsonstring)['place']['country_code'] + " - " + citie + " - " + value #  + " - " + json.loads(jsonstring)['user']['location']
                 
                 print str(score),state_aux, " - [" + word_aux + "]"
                 #Calculate whats the more happy state
