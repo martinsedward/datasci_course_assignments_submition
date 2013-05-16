@@ -1,1 +1,1 @@
-select count(*) from frequency;
+select count(*) from frequency where docid = "10398_txt_earn";
