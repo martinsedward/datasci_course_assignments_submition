@@ -11,6 +11,7 @@ for line in tweet_file:#Line
 #try: 
     tweets.append(json.loads(line))
 #except:
+tweet_file.close()
 
 ids = []
 hashtags_text_list = {}
