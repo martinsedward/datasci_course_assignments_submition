@@ -1,1 +1,3 @@
-select count(*) from frequency where docid = "10398_txt_earn";
+/* frequency(docid, term, count) */
+
+select count(term) from frequency where docid = "10398_txt_earn" and count = 1;
