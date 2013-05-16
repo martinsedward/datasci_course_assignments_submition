@@ -1,2 +1,2 @@
 clear
-sqlite3 reuters.db < query.sql > select_project.txt
+sqlite3 reuters.db < query.sql > union.txt
