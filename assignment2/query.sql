@@ -13,4 +13,4 @@
 -- ) x
 -- ;
 -- select count(*) from frequency where term = "parliament";
-select docid from frequency group by docid having count(term) > 300;
+select count(docid) from frequency group by docid having count(term) > 300;
