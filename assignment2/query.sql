@@ -12,5 +12,5 @@
 --  where docid = "925_txt_trade" and count = 1
 -- ) x
 -- ;
-
-select count(*) from frequency where term = "parliament";
+-- select count(*) from frequency where term = "parliament";
+select docid from frequency group by docid having count(term) > 300;

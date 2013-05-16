@@ -1,2 +1,2 @@
 clear
-sqlite3 reuters.db < query.sql > count.txt
+sqlite3 reuters.db < query.sql > big_documents.txt
