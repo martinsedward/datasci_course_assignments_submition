@@ -1,1 +1,11 @@
-3565
+12848_txt_trade|years|305
+14826_txt_trade|yesterday|302
+15352_txt_trade|youre|303
+17023_txt_trade|year|334
+17199_txt_crude|year|353
+1963_txt_trade|yes|350
+4067_txt_earn|year|319
+5376_txt_trade|youll|308
+6346_txt_acq|yens|312
+6996_txt_crude|years|322
+7135_txt_trade|zero|357
