@@ -25,4 +25,5 @@
 select count(*) from (
 select * from frequency group by docid having count(term) > 300);
 
+select sum(term) AS sum_term  from frequency group by docid;
 
