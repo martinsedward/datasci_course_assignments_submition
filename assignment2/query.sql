@@ -23,6 +23,6 @@
 --select count(docid) from frequency group by docid having (select sum(term) AS sum_term  from frequency group by docid) > 300);
 
 select count(*) from (
-select * from frequency group by docid having sum(term) > 300);
+select * from frequency group by docid having count(term) > 300);
 
 
