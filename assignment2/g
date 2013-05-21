@@ -1,25 +1,6 @@
 git add run
+git add g
 git add query.sql
-git add select.txt
-git add select_project.txt
-git add union.txt
-git add count.txt
-git add big_documents.txt
-git add two_words.txt
 git add multiply.txt
-git add "../assignment1/happiest_state_old.py"                                                                                                                                                      
-git add "../assignment1/new_dict.txt"                                                                                                                                                               
-git add "../assignment1/out_test.txt"                                                                                                                                                               
-git add "../assignment1/reuters.db"                                                                                                                                                                 
-git add "../assignment1/sentiment_file_derived.txt"   
-git add "../.c9revisions/"                                                                                                                                                                          
-git add "../assignment1/sentiment_file_derived.txt"                                                                                                                                                 
-git add ".mode"                                                                                                                                                                                     
-git add ".output"                                                                                                                                                                                   
-git add "g"                                                                                                                                                                                         
-git add "stdout;"                                                                                                                                                                                   
-git add "../test.txt"     
-
-
 git commit -m "Queries"
 git push
