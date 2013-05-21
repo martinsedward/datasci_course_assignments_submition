@@ -1,2 +1,2 @@
 clear
-sqlite3 reuters.db < query.sql > big_documents.txt
+sqlite3 reuters.db < query.sql > two_words.txt

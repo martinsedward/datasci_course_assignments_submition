@@ -13,12 +13,10 @@
 -- ) x
 -- ;
 -- select count(*) from frequency where term = "parliament";
--- select sum(Count_term) from (select count(term) AS 'Count_term' from frequency group by docid having count(term) > 300) as a;
--- You've probably got the group by and the filter correct, but remember that you need to add up the term frequencies rather than just count the terms.
+--select count(*) from (
+--select sum(count) as count_term  from frequency group by docid having count_term > 300);
+
+select count(docid) from frequency where term IN ("transactions", "world");
 
 
---select count(docid) from (
---select docid, count(term) AS count_term  from frequency group by docid having count_term >= 300);
-select count(*) from (
-select sum(count) as count_term  from frequency group by docid having count_term > 300);
 
