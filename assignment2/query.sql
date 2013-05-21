@@ -16,7 +16,7 @@
 --select count(*) from (
 --select sum(count) as count_term  from frequency group by docid having count_term > 300);
 
-select count(distinct(docid)) from frequency where term = "world" OR term = "transactions";
+select count(docid) from frequency where term = "world" OR term = "transactions";
 
 
 
