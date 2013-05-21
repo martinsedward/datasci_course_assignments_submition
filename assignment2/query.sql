@@ -19,10 +19,10 @@
 -- select distinct(docid) from frequency where term = "world");
 /* A(row_num, col_num, value), B(row_num, col_num, value) */
 
-select * from A
-union
-select * from B
-order by row_num, col_num;
+SELECT A1.row_num, A2.col_num
+  FROM A AS A1, B AS A2
+  WHERE A1.col_num = A2.row_num
+  GROUP BY A1.row_num, A2.col_num;
 
 
 
