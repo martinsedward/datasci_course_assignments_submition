@@ -17,7 +17,7 @@ git add "../assignment1/sentiment_file_derived.txt"
 git add ".mode"                                                                                                                                                                                     
 git add ".output"                                                                                                                                                                                   
 git add "g"                                                                                                                                                                                         
-git add "stdout"                                                                                                                                                                                   
+git add "stdout;"                                                                                                                                                                                   
 git add "../test.txt"     
 
 
