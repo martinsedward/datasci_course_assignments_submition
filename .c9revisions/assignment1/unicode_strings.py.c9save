@@ -1,0 +1,1 @@
+{"ts":1368227681616,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"# -*- coding: utf-8 -*-\nimport urllib\nimport json\n\n\nunicode_string = u\"ç*&%$#áéúãõ\"\nprint unicode_string\nencoded_string = unicode_string.encode('utf-8')\nprint encoded_string\n#print \"Hello World\"\n\n"]],"start1":0,"start2":0,"length1":0,"length2":196}]],"length":196}

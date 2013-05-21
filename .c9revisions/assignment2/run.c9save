@@ -1,0 +1,7 @@
+{"ts":1368676984920,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"clear\nsqlite3 reuters.db < query.sql > select.txt"]],"start1":0,"start2":0,"length1":0,"length2":49}]],"length":49}
+{"contributors":[],"silentsave":true,"ts":1368677005593,"patch":[[{"diffs":[[0,"> select"],[1,"_project"],[0,".txt"]],"start1":37,"start2":37,"length1":12,"length2":20}]],"length":57,"saved":false}
+{"ts":1368677128138,"patch":[[{"diffs":[[0,"lect"],[-1,"_project"],[0,".txt"]],"start1":41,"start2":41,"length1":16,"length2":8}]],"length":49,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1368677321900,"patch":[[{"diffs":[[0,"> select"],[1,"_project.txt"],[0,".txt"]],"start1":37,"start2":37,"length1":12,"length2":24}]],"length":61,"saved":false}
+{"ts":1368677385356,"patch":[[{"diffs":[[0,"ject.txt"],[-1,".txt"]],"start1":49,"start2":49,"length1":12,"length2":8}]],"length":57,"saved":false}
+{"ts":1368677712769,"patch":[[{"diffs":[[0,"l > "],[-1,"select_project"],[1,"union"],[0,".txt"]],"start1":35,"start2":35,"length1":22,"length2":13}]],"length":48,"saved":false}
+{"ts":1368680211813,"patch":[[{"diffs":[[0,"l > "],[-1,"union"],[1,"count"],[0,".txt"]],"start1":35,"start2":35,"length1":13,"length2":13}]],"length":48,"saved":false}

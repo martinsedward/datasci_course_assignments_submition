@@ -1,0 +1,6 @@
+{"ts":1368677261886,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"git add run\ngit add query.sql\ngit add select.txt\ngit commit -m \"Queries\"\ngit push"]],"start1":0,"start2":0,"length1":0,"length2":81}]],"length":81}
+{"contributors":[],"silentsave":true,"ts":1368677396976,"patch":[[{"diffs":[[0,"ect.txt\n"],[1,"select_project.txt\n"],[0,"git comm"]],"start1":41,"start2":41,"length1":16,"length2":35}]],"length":100,"saved":false}
+{"ts":1368677401615,"patch":[[{"diffs":[[0,"ect.txt\n"],[1,"git add "],[0,"select_p"]],"start1":41,"start2":41,"length1":16,"length2":24}]],"length":108,"saved":false}
+{"ts":1368677703384,"patch":[[{"diffs":[[0,"project.txt\n"],[1,"git add union.txt\n"],[0,"git commit -"]],"start1":64,"start2":64,"length1":24,"length2":42}]],"length":126,"saved":false}
+{"ts":1368680219224,"patch":[[{"diffs":[[0,"d union.txt\n"],[1,"git add count\n"],[0,"git commit -"]],"start1":82,"start2":82,"length1":24,"length2":38}]],"length":140,"saved":false}
+{"ts":1368680223726,"patch":[[{"diffs":[[0,"dd count"],[1,".txt"],[0,"\ngit com"]],"start1":99,"start2":99,"length1":16,"length2":20}]],"length":144,"saved":false}
