@@ -16,5 +16,5 @@
 -- select sum(Count_term) from (select count(term) AS 'Count_term' from frequency group by docid having count(term) > 300) as a;
 -- You've probably got the group by and the filter correct, but remember that you need to add up the term frequencies rather than just count the terms.
 
-select SUM(count_term) from (
-select count(term) as count_term from frequency group by docid having count(term) > 300);
+--select SUM(count_docid) from (
+select count(docid) as count_docid from frequency group by docid having count(term) > 300;
