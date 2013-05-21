@@ -20,7 +20,7 @@
 /* A(row_num, col_num, value), B(row_num, col_num, value) */
 
 SELECT A1.row_num, A2.col_num
-  FROM A AS A1, B AS A2
+  FROM A AS A1, A AS A2
   WHERE A1.col_num = A2.row_num
   GROUP BY A1.row_num, A2.col_num;
 
