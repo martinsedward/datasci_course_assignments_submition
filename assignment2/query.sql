@@ -13,11 +13,17 @@
 -- ) x
 -- ;
 -- select count(*) from frequency where term = "parliament";
---select count(*) from (
---select sum(count) as count_term  from frequency group by docid having count_term > 300);
+-- select count(*) from (
+-- select sum(count) as count_term  from frequency group by docid having count_term > 300);
+-- select count(*) from frequency where term = "transactions" and docid in(
+-- select distinct(docid) from frequency where term = "world");
+/* A(row_num, col_num, value), B(row_num, col_num, value) */
 
-select count(*) from frequency where term = "transactions" and docid in(
-select distinct(docid) from frequency where term = "world");
+select * from A
+union
+select * from B
+order by row_num, col_num;
+
 
 
 

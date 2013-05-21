@@ -1,2 +1,2 @@
 clear
-sqlite3 reuters.db < query.sql > two_words.txt
+sqlite3 matrix.db < query.sql > multiply.txt
